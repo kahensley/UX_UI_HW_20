@@ -1,149 +1,201 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
             </style>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!-- Hotjar Tracking Code for https://kahensley.github.io/UX_UI_HW_19/ -->
-        <script>
-            (function(h,o,t,j,a,r){
-             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:3109905,hjsv:6};
-             a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-        </script>    
+        
         <title>
 
         </title>
     </head>
     <body>
-        <header class="navigation">
-            <div class="inline-block logo">
-                <img src="images/logo.png" alt="letters K H" width="100" height="50">
-            </div>
-            <nav class="inline-block">
-                <ul>
-                    <li class="inline-block">Home</li>
-                    <li class="inline-block">UX</li>
-                    <li class="inline-block">Editorial</li>
-                    <li class="inline-block">Resume</li>
-                </ul>
-            </nav>
-        </header>
-        <section class="heroImg">
-            <div class="content">
-                <h1>Hi, I'm Keri Hensley, <br>a UX designer with 10+ years' expertise in visual communication and digital audiences.</h1>
-                <p id="intro">Drop me a line at <a href="mailto:khegre@gmail.com" target="_blank" rel="noopener noreferrer"> khegre@gmail.com</a> or reach out on <a href="https://www.linkedin.com/in/keriahensley" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
-                <div class="hiddenOnLoad">
-                    <div class="skiptoResume"><button onclick="window.location.href='https://drive.google.com/file/d/1OSAfCMQnLz14HkIBwkQXw5HGI829SQLa/view?usp=sharing';">Go straight to my resume</button></div>
-                </div>
-            </div>
-        </section>
-        <section class="selectedWork">
-            <!--  My Selected Work section coded using CSS flex -->
-            <h1 id="selectedWork">Selected work</h1>
-            <div class="flexContainer">
-                <div class="flexBox">
-                    <img src="images/Wix-solarSM.png" width="100%"/>
-                    <div class="flexBoxText">
-                        <h6>Editorial</h6>
-                        <h4>The Arizona Republic</h4>
-                        <p>Op-ed series that examines how the state of Arizona can become a leader in the solar energy space.</p>
-                        <img class="left" src="images/geariconSM.png"/>
-                        <h6>ART DIRECTION • PHOTO EDITING • LAYOUT • TYPOGRAPHY • HEADLINE WRITING</h6>
-                    </div>
-                </div>
+        <!-- Navigation bar Bootstrap Nav component -->
+    <nav class="customNav navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">UX</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Editorial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resume</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End navigation bar -->
 
-            
-                <div class="flexBox">
-                    <img src="images/DeptofEdproto.png" width="100%"/>
-                    <div class="flexBoxText">   
-                        <h6>UX</h6>
-                        <h4>U.S. Department of Education</h4>
-                        <p>A student project to research, prototype and test a responsive web redesign for a government agency.</p>
-                        <img class="left" src="images/geariconSM.png"/>
-                        <h6>USER RESEARCH • INFORMATION ARCHITECTURE • UI DESIGN • USABILITY TESTING • A/B TESTING</h6>
-                    </div>
+      <!-- Start jumbotron component -->
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Responsive web redesign</h1>
+          <p class="lead"><b>Client:</b> U.S. Department of Education (student project)</p>
+        </div>
+        <div>
+            <img src="images/wix-DoEjumbotron.png" width="100%">
+        </div>
+      </div>
+      <!-- End jumbotron -->    
+      <!-- Start card -->     
+   <section class="firstsection">
+    <div class="summary">
+           
+        <div class="section-intro">
+            <h1>
+                <span>Summary</span>
+            </h1> 
+            <p>In this student project, my team researched, prototyped and tested a responsive web redesign for a U.S. government agency homepage.</p>
+        </div>
+        
+        <div class="row">
+            <div class="card" style="width: 15rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Team</h5>
+                  
+                  <p class="card-text">
+                    <ul>
+                        <li>Keri Hensley</li>
+                        <li>Eli Potter</li>
+                    </ul>
+                </p>
+                  
                 </div>
-              
+              </div>
+              <div class="card" style="width: 15rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Timeframe</h5>
+                  
+                  <p class="card-text">4 weeks</p>
+                  
+                </div>
+              </div>
+              <div class="card" style="width: 15rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Tools</h5>
+                  
+                  <p class="card-text">
+                    <ul>
+                        <li>Figma</li>
+                        <li>Miro</li>
+                        <li>Google Slides</li>
+                        <li>Maze</li>
+                        <li>UsabilityHub</li>
+                    </ul>
+                  </p>
+                  
+                </div>
+              </div>
+              <div class="card" style="width: 15rem;">
+                <div class="card-body">
+                  <h5 class="card-title">My role</h5>
+                  
+                  <p class="card-text">
+                    <ul>
+                        <li>User research</li>
+                        <li>Information architecture</li>
+                        <li>UI design</li>
+                        <li>Usability testing</li>
+                        <li>A/B testing</li>
+                    </ul>
+                  </p>
+                  
+                </div>
+              </div>
+        </div>
+    </div>
+   </section> 
+   <!-- End cards -->  
+    <!-- Start second section cards -->     
+    <section class="secondsection">
+    <div class="summary">
+        <h1>
+            <span>The problem</span>
+        </h1>
+        <div class="container-fluid">
+            <div class="card1">
+                <div class="card-body">
+                    <p class="card-text">The U.S. Department of Education homepage:
+                        <ol>
+                            <li>Lacked a clear target audience</li>
+                            <li>Had complex organization and navigation systems</li>
+                            <li>Was visually dense and unappealing</li>
+                        </ol>
+                    </p>
+                    <h4>Result: an intimidating and confusing user experience.</h4>
+                </div>
             </div>
-            
-        </section>
-        <section class="selectedWork">
-            <div class="flexContainer">
-                <div class="flexBox">
-                    <img src="images/wix-obama.png" width="100%"/>
-                    <div class="flexBoxText">
-                        <h6>Editorial</h6>
-                        <h4>The Arizona Republic</h4>
-                        <p>Black leaders share their thoughts about the historic election and inauguration of Barack Obama.</p>
-                        <img class="left" src="images/geariconSM.png"/>
-                        <h6>ART DIRECTION • PHOTO EDITING • LAYOUT • TYPOGRAPHY • HEADLINE WRITING</h6>
-                    </div>
+            <div class="card2">
+                <div class="card-body">
+                    <img src="images/originalDoE.png" width="505px">
                 </div>
+            </div>
+        </div>
+    </div> 
+    </section>
+   <!-- End second section cards -->  
+   <!-- Start third section card -->     
+   <section class="firstsection">
+    <div class="summary">
+           
+        <div class="section-intro">
+            <h1>
+                <span>Research</span>
+            </h1> 
+            <p>The team's first and most difficult challenge: Who is using this website and why? <h4>Hypothesis: People looking for federal financial aid make up the majority of users.</h4></p>
+            <h6>Discovery</h6>
+            
+        </div>
+        
+        <div class="row">
+            
+            <div class="card-blue" style="width: 20rem;">
+                <div class="card-body-white">
+                    <p class="card-text-white">The Department's primary mission is to “establish policies on federal financial aid for education, and distributing as well as monitoring those funds.
 
-            
-                <div class="flexBox">
-                    <img src="images/HALO.png" width="100%"/>
-                    <div class="flexBoxText">   
-                        <h6>UX</h6>
-                        <h4>HALO Animal Rescue</h4>
-                        <p>A student project to research, prototype and test a responsive web redesign for a nonprofit agency.</p>
-                        <img class="left" src="images/geariconSM.png"/>
-                        <h6>USER RESEARCH • INFORMATION ARCHITECTURE • UI DESIGN • USABILITY TESTING • A/B TESTING</h6>
-                    </div>
+                    </p>
+                  
                 </div>
-              
-            </div>
-            
-        </section>
-        <section class="selectedWork">
-            <div class="flexContainer">
-                <div class="flexBox">
-                    <img src="images/Wix-ThinBlueLine.png" width="100%"/>
-                    <div class="flexBoxText">
-                        <h6>Editorial</h6>
-                        <h4>The Arizona Republic</h4>
-                        <p>Op-ed series on the rising numbers of police officers killed in the line of duty in Phoenix, Arizona.</p>
-                        <img class="left" src="images/geariconSM.png"/>
-                        <h6>ART DIRECTION • PHOTO EDITING • LAYOUT • TYPOGRAPHY • HEADLINE WRITING</h6>
-                    </div>
+              </div>
+              <div class="card-blue" style="width: 20rem;">
+                <div class="card-body-white">
+                 
+                  
+                  <p class="card-text-white">The largest portion of its budget goes to its Office of Federal Student Aid, which distributes $112 billion in aid each year from a $187 billion budget.</p>
+                  
                 </div>
-
-            
-                <div class="flexBox">
-                    <img src="images/Bitmap.png" width="100%"/>
-                    <div class="flexBoxText">   
-                        <h6>UX</h6>
-                        <h4>BitMap mobile app</h4>
-                        <p>A student project to research, prototype and test a new app solving a need in users' everyday lives.</p>
-                        <img class="left" src="images/geariconSM.png"/>
-                        <h6>USER RESEARCH • PROBLEM DEFINITION • IDEATION • PROTOTYPING • UI DESIGN • USABILITY TESTING</h6>
-                    </div>
+              </div>
+              <div class="card-blue" style="width: 20rem;">
+                <div class="card-body-white">
+                  
+                  
+                  <p class="card-text-white">Nearly 84% of college students benefit from financial aid and two-thirds of students apply for federal aid using the federal FAFSA form administered by the Department of Education. 
+                  </p>
+                  
                 </div>
-              
-            </div>
-            
-        </section>
-        <section class="button">
-            <button>View case studies</button>
-            <button>View editorial work</button>
-        </section>
-        <footer>
-            <ul class="ulfooter">
-                <li class="inline-block">About</li>
-                <li class="inline-block">Skills</li>
-                <li class="inline-block">Work</li>
-                <li class="inline-block">Contact</li>
-            </ul>
-        </footer>
+              </div>
+              <p class="p-centered">At this point, we felt confident that most people visiting the website would be looking for information about student aid.</p>
+        </div>
+    </div>
+   </section> 
+   <!-- End third section cards -->  
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
     
     </html>
