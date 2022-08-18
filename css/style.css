@@ -3,6 +3,12 @@ h6 {
     padding-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 8px;
+    text-align: center;
+}
+
+h4 {
+  margin-top: 15px;
+  
 }
 
 .p-centered {
@@ -41,7 +47,7 @@ h6 {
 .jumbotron {
     background-color: #e9eff6;
     height: 500px;
-    height: calc(100vh - 25px);
+    height: calc(75vh - 25px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,6 +82,16 @@ h6 {
     
   }
 
+  .summary-mediaobj {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
   .row {
     display: flex;
     flex-direction: row;
@@ -95,8 +111,6 @@ h6 {
     width: 100%;
   }
 
-  
-
   .leftimage {
     width: 30%;
   }
@@ -111,13 +125,37 @@ h6 {
      justify-content: center;
      gap: 20px;
      box-sizing: border-box;
-     padding-top: 2%;
+     padding-top: 0%;
      
    }
 
    .secondsection {
     background-color: #f6f0e8;
+    
    }
+
+.fourthsection {
+  margin-top: 0%;
+
+}   
+
+.fifthsection {
+  background-color: #f6f0e8;
+  
+}
+
+.sixthsection {
+  background-color: #f6f0e8;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+  gap: 30px;
+}
 
 .card-blue {
     background-color: #00295f;
@@ -132,8 +170,28 @@ h6 {
 .card-text-white {
     padding: 24px;
 }
-  
 
+.card-img {
+  background-image: url(../images/80percent.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+  
+.downarrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+.feedback {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
   @media only screen and (max-width: 768px) {
     
   
