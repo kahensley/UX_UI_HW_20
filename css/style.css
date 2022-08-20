@@ -148,6 +148,23 @@ h4 {
   background-color: #f6f0e8;
 }
 
+.seventhsection {
+  margin-top: 8%;
+  margin-bottom: 8%;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.conclusionsection {
+  background-color: #f6f0e8;
+  
+}
+
+.card-body-narrow {
+  width: 70%;
+}
+
+
 .media {
   display: flex;
   flex-direction: column;
